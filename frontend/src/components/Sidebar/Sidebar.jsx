@@ -7,6 +7,7 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
+  Link
 } from "lucide-react";
 
 const Sidebar = ({
@@ -47,6 +48,12 @@ const Sidebar = ({
       icon: <Eraser className="w-5 h-5" />,
       description: "Remove background from images",
     },
+    {
+      id: "image-to-base64",
+      label: "Image to Base64",
+      icon: <Link className="w-5 h-5" />,
+      description: "Converts Image to Base64 URI",
+    }
   ];
 
   return (

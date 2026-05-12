@@ -4,6 +4,7 @@ import PdfPng from "../../pages/PdfPng";
 import ImageWebp from "../../pages/ImageWbp";
 import ImageJpg from "../../pages/ImageJpg";
 import RemoveBg from "../../pages/RemoveBg";
+import ImageToBase64 from "../../pages/ImageToBase64";
 import { Menu } from "lucide-react";
 
 const Layout = () => {
@@ -45,6 +46,8 @@ const Layout = () => {
         return <ImageJpg />;
       case "remove-bg":
         return <RemoveBg />;
+      case "image-to-base64":
+        return <ImageToBase64 />;
       default:
         return <PdfPng />;
     }
